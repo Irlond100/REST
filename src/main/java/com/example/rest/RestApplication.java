@@ -1,7 +1,7 @@
 package com.example.rest;
 
-import com.example.rest.model.AuthorizationService;
-import com.example.rest.model.UserRepository;
+import com.example.rest.service.AuthorizationService;
+import com.example.rest.repository.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

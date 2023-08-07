@@ -1,13 +1,16 @@
-package com.example.rest.model;
+package com.example.rest.service;
 
-import com.example.rest.model.exception.InvalidCredentials;
-import com.example.rest.model.exception.UnauthorizedUser;
+import com.example.rest.exception.InvalidCredentials;
+import com.example.rest.exception.UnauthorizedUser;
+import com.example.rest.model.Authorities;
+import com.example.rest.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class AuthorizationService {
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public AuthorizationService(UserRepository userRepository) {
         this.userRepository = userRepository;

@@ -1,5 +1,6 @@
-package com.example.rest.model;
+package com.example.rest.repository;
 
+import com.example.rest.model.Authorities;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
